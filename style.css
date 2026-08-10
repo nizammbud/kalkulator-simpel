@@ -1,0 +1,39 @@
+@font-face{
+    font-family:"Matrix";
+    src:url("MatrixTypeDisplay-Regular.ttf");
+}
+body{
+  background: #000;
+}
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  width: 300px;
+  margin: auto;
+}
+button{
+  padding: 20px;
+  font-family: Matrix;
+  border-radius: 8px;
+}
+.display {
+  grid-column: span 4;
+  text-align: right;
+  font-size: 2.5rem;
+  background: #222;
+  color: white;
+  padding: 20px;
+  font-family: Matrix;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+.Teks-awal{
+  background: #fff;
+  text-align: center;
+  font-family: "Matrix";
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 20px;
+  border: 3px solid #aaa;
+}
