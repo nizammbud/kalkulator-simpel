@@ -19,10 +19,6 @@ let expression = "";
 function updateDisplay() {
   display.textContent = expression || "0";
 }
-
-
-// ANGKA
-
 numbers.forEach(button => {
   button.addEventListener("click", () => {
 
@@ -37,30 +33,18 @@ numbers.forEach(button => {
     updateDisplay();
   });
 });
-
-
-// CLEAR
-
 clearButton.addEventListener("click", () => {
 
   expression = "";
 
   updateDisplay();
 });
-
-
-// DELETE
-
 deleteButton.addEventListener("click", () => {
 
   expression = expression.slice(0, -1);
 
   updateDisplay();
 });
-
-
-// OPERATOR
-
 plusButton.addEventListener("click", () => {
   expression += "+";
   updateDisplay();
@@ -80,10 +64,6 @@ divideButton.addEventListener("click", () => {
   expression += "/";
   updateDisplay();
 });
-
-
-// PERCENT
-
 percentButton.addEventListener("click", () => {
 
   if (!expression) return;
@@ -92,10 +72,6 @@ percentButton.addEventListener("click", () => {
 
   updateDisplay();
 });
-
-
-// HASIL
-
 equals.addEventListener("click", () => {
 
   if (!expression) return;
